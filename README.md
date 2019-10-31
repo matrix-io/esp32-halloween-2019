@@ -2,7 +2,7 @@
 
 The current project show how build and upload any firmware for [MatrixVoice ESP32 board](https://www.matrix.one/products/voice) using [PlatformIO](https://platformio.org/) OTA or `Arduino OTA`. 
 
-**note**: The next documentation is based on [Program Over the Air on ESP32 MATRIX Voice](https://www.hackster.io/matrix-labs/program-over-the-air-on-esp32-matrix-voice-5e76bb) documentation but it using PlatformIO instead Arduino IDE. You dont need IDF toolchain or any library, PlatformIO do it for you.
+**note**: The next documentation is based on [Program Over the Air on ESP32 MATRIX Voice](https://www.hackster.io/matrix-labs/program-over-the-air-on-esp32-matrix-voice-5e76bb) documentation but it using PlatformIO instead Arduino IDE. You dont need IDF toolchain or any library, PlatformIO does it for you.
 
 ---
 
@@ -47,13 +47,11 @@ voice_esp32_enable
 Return to your PC and clone this repository:
 
 ```bash
-git clone https://github.com/hpsaturn/matrixvoice_platformio.git
-cd matrixvoice_platformio
+git clone https://github.com/matrix-io/esp32-halloween-2019.git
+cd esp32-halloween-2019
 ```
-Copy `platformio.ini` sample and change your network parameters:
-```bash
-cp platformio.ini.sample platformio.ini
-```
+Change your network parameters in `platform.ini`:
+
 **NOTE:** plase change `platformio.ini` and set your `SSID` and `PASSW` like this:
 
 ```python
