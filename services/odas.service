@@ -1,0 +1,19 @@
+[Unit]
+Description=Example systemd bash service.
+After=matrixio-devices-firmware.service
+
+[Service]
+User=pi
+Type=simple
+
+# Command to run
+ExecStart=/bin/bash /home/pi/services/odas.sh
+
+# Automatically Restart after crash
+Restart=on-failure
+
+# Wait x seconds before restarting
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
